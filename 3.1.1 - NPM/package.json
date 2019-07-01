@@ -1,0 +1,19 @@
+{
+  "name": "demo-clase",
+  "version": "1.0.0",
+  "description": "proyecto demo",
+  "main": "index.js",
+  "scripts": {
+    "prueba1": "node test1.js",
+    "prueba2": "node test2.js",
+    "prueba3": "node test3.js 25",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chaveta",
+  "license": "ISC",
+  "dependencies": {
+    "number-to-words": "^1.2.4",
+    "random-int": "^2.0.0",
+    "readline-sync": "^1.4.9"
+  }
+}

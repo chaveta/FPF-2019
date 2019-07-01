@@ -1,0 +1,10 @@
+console.clear();
+console.log();
+console.log("Esta es la funcionalidad del archivo test2.js");
+console.log("Utiliza la libreria numbers-to-words");
+console.log("Se ejecuta mediante el script prueba2");
+console.log("Genera un texto que representa el valor númerico pasado como parámetro: ");
+var converter = require('number-to-words');
+var valor = 99;
+console.log(valor + " ----> " + converter.toWords(valor));
+console.log();
