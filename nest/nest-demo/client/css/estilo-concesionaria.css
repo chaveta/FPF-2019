@@ -1,0 +1,35 @@
+h1, img {
+    display:inline-block;
+}
+
+body {
+    background-image: url("/images/background-gris-suave.jpg");
+}
+
+.mybtn{
+  cursor: pointer;
+  /* background: lightskyblue; */
+  /* outline:none; */
+  /* border:none;  */
+  /* padding:3px; */
+  /* border-radius:0px; */
+  /* color:#fff; */
+}
+.mybtn:hover{
+  background: green;
+  color: white;
+}
+.mybtn:active{
+  background: lightgreen;
+  color: black;
+}
+
+label { display: inline-block; width: 130px; text-align: left; }
+
+thead {
+  background-color: rgba(144, 238, 144, 0.534);
+}
+
+/* tr {
+  outline: thin solid grey;
+} */

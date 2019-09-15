@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <img src="images/icon_calculadora.png" width="50" height="25" alt="Icono Calculadora" />
+  <h1>Calculadora</h1>
+  <hr>
+  <h2>Versión 2 - El cálculo se hace en un servicio del servidor (calculo2.service)</h2>
+  <hr>
+  <input type="text" name="" value="" id="num1">
+  <select id="operador">
+    <option value="+">más</option>
+    <option value="-">menos</option>
+    <option value="*">multiplicado por</option>
+    <option value="d">dividido por</option>
+    <option value="^">elevado a la</option>
+  </select>
+  <input type="text" name="" value="" id="num2">
+  <button type="button" id="btnCalcular">Calcular</button>
+  <button type="button" id="btnVolver">Volver al Indice de Ejercicios</button>
+  <table>
+    <thead>
+      <tr>
+        <td>Num1</td>
+        <td>Operador</td>
+        <td>Num2</td>
+        <td>Resultado</td>
+      </tr>
+    </thead>
+    <tbody id="tblCalculos">
+    </tbody>
+  </table>
+  <script src="js/calculadora2.js"></script>
+</body>
+
+</html>

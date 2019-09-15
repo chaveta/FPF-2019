@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Concesionaria</title>
+  <link rel="stylesheet" href="css/estilo-concesionaria.css">
+</head>
+
+<body>
+  <img src="images/icon_concesionaria.png" width="40" height="25" alt="Icono Concesionaria" />
+  <h1>Concesionaria</h1>
+  <hr>
+  <h3>Versión 1 - Implementación Inicial (Frontend para agregar y listar vehículos - Backend mocking)</h2>
+  <hr>
+  <h3>Listar Vehículos</h3>
+  <hr>
+  <label for="tipo">Filtrar para mostrar</label> <select id="tipo">
+    <option value="todos">Todos</option> 
+    <option value="camioneta">Camionetas</option>
+    <option value="auto">Autos</option>
+    </select>
+  
+  <button type="button" id="btnVolver" class="mybtn">Volver</button>
+  <table>
+    <thead>
+      <td>Marca</td>
+      <td>Modelo</td>
+      <td>Patente</td>
+      <td>Año</td>
+      <td>Precio</td>
+      <td>Capacidad</td>
+    </thead>
+    <hr>
+    <tbody id="tblVehiculos"></tbody>
+  </table>
+
+  <script src="js/concesionaria1-listar.js"></script>
+</body>
+
+</html>

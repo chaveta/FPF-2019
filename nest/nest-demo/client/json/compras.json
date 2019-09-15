@@ -1,0 +1,20 @@
+{
+    "compras":[
+        {
+            "producto":"Producto_0",
+            "precio":80
+        },
+        {
+            "producto":"Producto_1",
+            "precio":70
+        },
+        {
+            "producto":"Producto_2",
+            "precio":100
+        },
+        {
+            "producto":"Producto_3",
+            "precio":300
+        }
+    ]
+}
