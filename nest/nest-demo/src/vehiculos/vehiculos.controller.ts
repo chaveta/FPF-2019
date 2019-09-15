@@ -3,8 +3,8 @@ import { VehiculosService } from './vehiculos.service';
 @Controller('vehiculos')
 export class VehiculosController {
     constructor(private vehiculosService: VehiculosService) { }
-    @Get()
-    public getVehiculos(): string {
-        return this.vehiculosService.getVehiculos()
+    @Get(':arg1')
+    public getVehiculos(@Param('arg1') arg1): string {
+        return this.vehiculosService.getVehiculos(arg1)
     }
 }
