@@ -11,7 +11,7 @@ export class VehiculosService {
 
     constructor(){
         this.baseVehiculos = [];
-        // Utilizo un arreglo para simular la base de datos a la que acceden los servicios
+        // Utilizo un arreglo para simular la base de datos
         let auto1 = new Auto('Ford', 'Fiesta', 'AA000AA', 2019, 800000, 20);
         this.baseVehiculos.push(auto1);
         let auto2 = new Auto('Fiat', 'Uno', 'AA000AB', 2019, 450000, 17);
@@ -39,4 +39,29 @@ export class VehiculosService {
         }
         return(vehiculos);
     }
+
+    public create(arg1: any) {
+        let tipo = arg1['tipo'];
+        let marca = arg1['marca'];
+        let modelo = arg1['modelo'];
+        let patente = arg1['patente'];
+        let anio = arg1['anio'];
+        let precio = arg1['precio'];
+        if (marca && modelo) {
+            if (tipo == 'auto') {
+                let capacidadBaul = arg1['capacidadBaul'];
+                const unVehiculo = new Auto(marca, modelo, patente, anio, precio, capacidadBaul);    
+                this.baseVehiculos.push(unVehiculo);
+            }
+            else if (tipo == 'camioneta') {
+                let capacidadCarga = arg1['capacidadCarga'];
+                const unVehiculo = new Camioneta(marca, modelo, patente, anio, precio, capacidadCarga);
+                this.baseVehiculos.push(unVehiculo);
+            }
+            return "ok";
+        }
+        else
+            return "parametros incorrectos";
+    }
+
 }

@@ -1,5 +1,3 @@
-let btnVolver = document.querySelector("#btnVolver");
-btnVolver.addEventListener("click", volver);
 let tipo = document.querySelector('#tipo');
 tipo.addEventListener("click", load);
 
@@ -8,16 +6,12 @@ load();
 
 async function load() {
     try {
-        let r = await fetch("/vehiculos/"+tipo.value);
+        let r = await fetch("/vehiculos/" + tipo.value);
         vehiculos = await r.json();
         mostrarTablaVehiculos();
     } catch (err) {
         alert(err.message);
     }
-}
-
-function volver() {
-    history.go(-1);
 }
 
 function mostrarTablaVehiculos() {
