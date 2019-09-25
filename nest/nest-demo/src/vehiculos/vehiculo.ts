@@ -14,4 +14,7 @@ export class Vehiculo {
         this.precio = precio;
     }
 
+    public getPatente(): string {
+        return this.patente;
+    }
 }

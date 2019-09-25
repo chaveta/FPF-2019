@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Concesionaria</title>
+  <link rel="stylesheet" href="css/estilo-concesionaria.css">
+</head>
+
+<body>
+  <img src="images/icon_concesionaria.png" width="40" height="25" alt="Icono Concesionaria" />
+  <h2>Concesionaria</h2>
+  <hr>
+  <h3>Gestionar Vehículos</h3>
+  <hr>
+  <label for="tipo">Filtrar para mostrar</label> <select id="tipo" title="Tipo de vehículo" >
+    <option value="todos">Todos</option>
+    <option value="autos">Autos</option>
+    <option value="camionetas">Camionetas</option>
+  </select>
+  <table id="tbl">
+    <!-- El encabezado de la tabla se redefine por javascript -->
+    <hr>
+    <tbody id="tblVehiculos">
+      <!-- El cuerpo de la tabla se redefine por javascript -->
+    </tbody>
+  </table>
+  <hr>
+  <button type="button" id="btnAgregarVehiculo" title="Agregar nuevo vehículo" class="mybtn">Agregar Vehículo</button>
+  <button type="button" id="btnVolver" title="Volver al menú principal" class="mybtn">Volver</button>
+  <script src="js/concesionaria1-gestionarVehiculos.js"></script>
+</body>
+
+</html>

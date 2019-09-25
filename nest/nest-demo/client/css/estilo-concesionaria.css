@@ -1,35 +1,89 @@
-h1, img {
-    display:inline-block;
+html {
+    font-family: 'Noto Sans', Sans-Serif;
+    font-size: 16px;
+    /* background: #edebe9 linear-gradient(to bottom, #dbd7d1, #edebe9 116px) no-repeat; */
+    background: #edebe9 linear-gradient(to bottom, #afa698, #edebe9 130px) no-repeat;
+    color: #4d4d4d;
 }
 
-body {
-    background-image: url("/images/background-gris-suave.jpg");
+h2, img {
+  display: inline-block;
 }
 
-.mybtn{
+/* Estilo de los botones */
+
+.mybtn {
+  background: lightgray;
   cursor: pointer;
-  /* background: lightskyblue; */
-  /* outline:none; */
-  /* border:none;  */
-  /* padding:3px; */
-  /* border-radius:0px; */
-  /* color:#fff; */
-}
-.mybtn:hover{
-  background: green;
-  color: white;
-}
-.mybtn:active{
-  background: lightgreen;
-  color: black;
 }
 
-label { display: inline-block; width: 130px; text-align: left; }
+.mybtn:hover {
+  background: #4CAF50;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 40px 0 rgba(0,0,0,0.19);
+}
+
+.mybtnEliminar{
+  cursor: pointer;
+  border: none;
+  background: none;
+  background-image: url("/images/icon_eliminar_15x15_gris.png");
+  background-repeat: no-repeat;
+  width:15px;
+  height:15px;
+}
+
+.mybtnEliminar:hover{
+  background-image: url("/images/icon_eliminar_15x15_rojo.png");
+}
+
+.mybtnEditar{
+  cursor: pointer;
+  border: none;
+  background: none;
+  background-image: url("/images/icon_lapiz_15x15_gris.png");
+  background-repeat: no-repeat;
+  width:15px;
+  height:15px;
+}
+
+.mybtnEditar:hover{
+  background-image: url("/images/icon_lapiz_15x15_rojo.png");
+}
+
+/* Estilo de la tabla */
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
 
 thead {
-  background-color: rgba(144, 238, 144, 0.534);
+  background-color: #4CAF50;
+  color: white;
 }
 
-/* tr {
-  outline: thin solid grey;
-} */
+td {
+  padding: 2px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+/* Estilo de los imputs */
+
+label { 
+  display: inline-block; 
+  width: 150px; 
+  text-align: right;
+  padding: 3px;
+}
+
+input:valid, textarea:valid {
+  color:green;
+}
+
+input:invalid, textarea:invalid {
+  color:red;
+}

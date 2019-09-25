@@ -1,17 +1,20 @@
 let btnAgregar = document.querySelector("#btnAgregar");
 btnAgregar.addEventListener("click", agregar);
 
+let btnVolver = document.querySelector("#btnVolver");
+btnVolver.addEventListener("click", volver);
+
 let tipo = document.querySelector('#tipo');
 tipo.addEventListener("click", inicializarCampos);
 
 function inicializarCampos() {
-    document.querySelector('#marca').value = "";
-    document.querySelector('#modelo').value = "";
-    document.querySelector('#patente').value = "";
-    document.querySelector('#anio').value = "";
-    document.querySelector('#precio').value = "";
-    document.querySelector('#capacidadBaul').value = "";
-    document.querySelector('#capacidadCarga').value = "";
+    // document.querySelector('#marca').value = "";
+    // document.querySelector('#modelo').value = "";
+    // document.querySelector('#patente').value = "";
+    // document.querySelector('#anio').value = "";
+    // document.querySelector('#precio').value = "";
+    // document.querySelector('#capacidadBaul').value = "";
+    // document.querySelector('#capacidadCarga').value = "";
     if (document.querySelector('#tipo').value == "auto") {
         document.querySelector('#capacidadBaul').disabled = false;
         document.querySelector('#capacidadCarga').disabled = true;
@@ -53,8 +56,12 @@ async function agregar() {
     if (response.ok) {
         let json = await response.text();
         if (json != "ok") {
-            alert("error en datos");
+            alert("Error en datos");
         }
     }
-    location.href='concesionaria1-listar.html';
+    location.href='concesionaria1-gestionarVehiculos.html';
+}
+
+function volver() {
+    location.href='concesionaria1-gestionarVehiculos.html';
 }
