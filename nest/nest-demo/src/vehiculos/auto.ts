@@ -4,9 +4,13 @@ export class Auto extends Vehiculo {
     
     private capacidadBaul: number;
         
-    public constructor(marca: string, modelo: string, patente: string, anio: number, precio: number, capacidadBaul: number) {
-        super(marca, modelo, patente, anio, precio);
+    public constructor(tipo: string, marca: string, modelo: string, patente: string, anio: number, precio: number, capacidadBaul: number) {
+        super(tipo, marca, modelo, patente, anio, precio);
         this.capacidadBaul = capacidadBaul;
     }
+
+    public getCapacidadBaul(): number {
+        return this.capacidadBaul;
+    } 
 
 }

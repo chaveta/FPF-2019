@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Concesionaria</title>
+  <link rel="stylesheet" href="css/estilo-concesionaria.css">
+</head>
+
+<body>
+  <img src="images/icon_concesionaria.png" width="40" height="25" alt="Icono Concesionaria" />
+  <h2>Concesionaria</h2>
+  <hr>
+  <h3>Agregar Vehículo</h3>
+  <hr>
+  <br>
+  <label for="tipo">Tipo:</label> <select id="tipo">
+    <option value="auto">Auto</option>
+    <option value="camioneta">Camioneta</option>
+  </select> <br>
+  <label for="marca">Marca: </label>
+  <input type="text" name="" value="" id="marca" maxlength="40"> <br>
+  <label for="modelo">Modelo: </label>
+  <input type="text" name="" value="" id="modelo" maxlength="40"> <br>
+  <label for="patente">Patente: </label>
+  <input type="text" name="" value="" id="patente" placeholder="campo obligatorio" maxlength="10" required> <br>
+  <label for="anio">Año</label>
+  <input type="number" name="" value="" id="anio" min=1900 max=2100> <br>
+  <label for="precio">Precio: </label>
+  <input type="number" name="" value="" id="precio" min=0 max=9999999> <br>
+  <label for="capacidadBaul">Cap. de Baúl (lts):</label>
+  <input type="number" name="" value="" id="capacidadBaul" min=0 max=9999999> <br>
+  <label for="capacidadCarga">Cap. de Carga (Kg):</label>
+  <input type="number" name="" value="" id="capacidadCarga" min=0 max=9999999 disabled> <br>
+  <br>
+  <hr>
+  <button type="button" id="btnAgregar" class="mybtn">Agregar</button>
+  <button type="button" id="btnVolver" title="Volver al listado de vehículos" class="mybtn">Volver</button>
+  <script src="js/concesionaria-agregar-vehiculo.js"></script>
+</body>
+
+</html>

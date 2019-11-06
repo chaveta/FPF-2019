@@ -15,11 +15,15 @@
   <hr>
   <h3>Gestionar Vehículos</h3>
   <hr>
-  <label for="tipo">Filtrar para mostrar</label> <select id="tipo" title="Tipo de vehículo" >
+  <!-- <label for="tipo">Filtrar para mostrar:</label>  -->
+  <select id="tipo" title="Tipo de vehículo" hidden>
     <option value="todos">Todos</option>
     <option value="autos">Autos</option>
     <option value="camionetas">Camionetas</option>
   </select>
+  <label for="consulta">Ingresar consulta por:</label> 
+  <input type="text" placeholder="palabra clave..." title = "Indicar todos, autos, camionetas, marca, modelo, patente, año o precio máximo" id="palabraClave" maxlength="20">
+  <button type="button" id="btnBuscar" title="Consultar por palabra clave" class="mybtn" disabled>Buscar</button>
   <table id="tbl">
     <!-- El encabezado de la tabla se redefine por javascript -->
     <hr>
@@ -30,7 +34,7 @@
   <hr>
   <button type="button" id="btnAgregarVehiculo" title="Agregar nuevo vehículo" class="mybtn">Agregar Vehículo</button>
   <button type="button" id="btnVolver" title="Volver al menú principal" class="mybtn">Volver</button>
-  <script src="js/concesionaria1-gestionarVehiculos.js"></script>
+  <script src="js/concesionaria-listar-vehiculos.js"></script>
 </body>
 
 </html>

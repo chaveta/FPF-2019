@@ -4,9 +4,13 @@ export class Camioneta extends Vehiculo {
     
     private capacidadCarga: number;
         
-    public constructor(marca: string, modelo: string, patente: string, anio: number, precio: number, capacidadCarga: number) {
-        super(marca, modelo, patente, anio, precio);
+    public constructor(tipo: string, marca: string, modelo: string, patente: string, anio: number, precio: number, capacidadCarga: number) {
+        super(tipo, marca, modelo, patente, anio, precio);
         this.capacidadCarga = capacidadCarga;
     }
+
+    public getCapacidadBaul(): number {
+        return this.capacidadCarga;
+    } 
 
 }

@@ -1,9 +1,9 @@
-html {
-    font-family: 'Noto Sans', Sans-Serif;
-    font-size: 16px;
-    /* background: #edebe9 linear-gradient(to bottom, #dbd7d1, #edebe9 116px) no-repeat; */
-    background: #edebe9 linear-gradient(to bottom, #afa698, #edebe9 130px) no-repeat;
-    color: #4d4d4d;
+/* Estilo del body */
+
+body {
+  font-family: 'Noto Sans', Sans-Serif;
+  background: #edebe9 linear-gradient(to bottom, #afa698, #edebe9 130px) no-repeat;
+  color: #4d4d4d;
 }
 
 h2, img {
@@ -21,6 +21,16 @@ h2, img {
   background: #4CAF50;
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 40px 0 rgba(0,0,0,0.19);
+}
+
+.mybtn:disabled:hover {
+  background: lightgray;
+  color: grey;
+  box-shadow: none;
+}
+
+.mybtn:focus {
+  outline: none;
 }
 
 .mybtnEliminar{
@@ -51,11 +61,26 @@ h2, img {
   background-image: url("/images/icon_lapiz_15x15_rojo.png");
 }
 
+.mybtnVisualizar{
+  cursor: pointer;
+  border: none;
+  background: none;
+  background-image: url("/images/icon_ojo_20x15_gris.png");
+  background-repeat: no-repeat;
+  width:20px;
+  height:15px;
+}
+
+.mybtnVisualizar:hover{
+  background-image: url("/images/icon_ojo_20x15_rojo.png");
+}
+
+
 /* Estilo de la tabla */
 
 table {
   border-collapse: collapse;
-  width: 60%;
+  width: 100%;
 }
 
 thead {
@@ -64,7 +89,7 @@ thead {
 }
 
 td {
-  padding: 2px;
+  padding: 5px;
 }
 
 tr:nth-child(even) {
@@ -75,15 +100,16 @@ tr:nth-child(even) {
 
 label { 
   display: inline-block; 
-  width: 150px; 
+  width: 160px; 
   text-align: right;
   padding: 3px;
 }
 
-input:valid, textarea:valid {
-  color:green;
+input {
+  width: 300px;
 }
 
 input:invalid, textarea:invalid {
-  color:red;
+  /* background-color:rgb(253, 204, 211); */
+  color: red;
 }
